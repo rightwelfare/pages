@@ -22,5 +22,5 @@ jobs:
       run: |
         git config --global user.name 'Anup Dixit'
         git config --global user.email 'github@rightwelfare.com'
-        git remote set-url origin https://x-access-token:${{secrets.GITHUG_TOKEN}}@github.com/${{github.repository }}
+        git remote set-url origin https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository }}
         npm run deploy
